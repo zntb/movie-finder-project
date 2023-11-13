@@ -64,7 +64,7 @@ function renderMovieList(movies) {
 
   for (let movieTitle of movieTitles) {
     movieTitle.onclick = function (event) {
-      let url = `http://www.omdbapi.com/?i=${event.target.parentElement.dataset.imdbid}&apikey=27147d94`;
+      let url = `https://www.omdbapi.com/?i=${event.target.parentElement.dataset.imdbid}&apikey=27147d94`;
 
       fetch(url)
         .then(function (response) {
