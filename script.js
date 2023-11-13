@@ -8,7 +8,7 @@ document.getElementById("search").onsubmit = async function (event) {
     return;
   }
 
-  let url = `http://www.omdbapi.com/?s=${encodeURI(
+  let url = `https://www.omdbapi.com/?s=${encodeURI(
     searchWord
   )}&y=${year}i=tt3896198&apikey=27147d94`;
 
